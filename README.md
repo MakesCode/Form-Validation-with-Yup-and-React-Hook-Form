@@ -1,27 +1,11 @@
-# React + TypeScript + Vite
+# Form Validation with Yup and React Hook Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simplify form validation in React applications with the combined power of Yup schema validation and React Hook Form. This project provides an easy-to-use solution for validating form inputs and displaying toast notifications for any validation errors.
 
-Currently, two official plugins are available:
+## How It Works
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Validation Schema:** Define your validation schema using Yup. Customize validation rules for each form field, ensuring accurate data input.
 
-## Expanding the ESLint configuration
+2. **React Hook Form Integration:** Integrate the schema with React Hook Form to enable seamless form submissions and error handling.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. **Toast Notifications:** Display toast notifications using Sonner to alert users of any validation errors in the form.
